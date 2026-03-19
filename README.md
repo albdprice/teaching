@@ -12,7 +12,7 @@ Guest lecture series on **Density Functional Theory** for Prof. O. Anatole von L
 
 ### Lecture 1: From the Hamiltonian to Thermodynamic Properties
 
-[**Download Slides (PDF)**](CHM328/lecture1/slides/CHM328_DFT_Lecture1.pdf) | [**Companion Notes**](CHM328/notes/lecture1_notes.tex)
+[**Download Slides (PDF)**](CHM328/lecture1/slides/CHM328_DFT_Lecture1.pdf) | [**Companion Notes**](CHM328/notes/lecture1_notes.pdf)
 
 Covers the foundations of electronic structure theory and its connection to statistical thermodynamics:
 - The molecular Hamiltonian and Born-Oppenheimer approximation
@@ -25,7 +25,7 @@ Covers the foundations of electronic structure theory and its connection to stat
 
 ### Lecture 2: Transition States, Reaction Mechanisms, and Energy Profiles
 
-[**Download Slides (PDF)**](CHM328/lecture2/slides/CHM328_DFT_Lecture2.pdf) | [**Companion Notes**](CHM328/notes/lecture2_notes.tex)
+[**Download Slides (PDF)**](CHM328/lecture2/slides/CHM328_DFT_Lecture2.pdf) | [**Companion Notes**](CHM328/notes/lecture2_notes.pdf)
 
 Applies DFT to chemical kinetics and reaction mechanism analysis:
 - Transition state theory: saddle points, imaginary frequencies, IRC verification
@@ -40,8 +40,8 @@ Applies DFT to chemical kinetics and reaction mechanism analysis:
 
 Detailed written notes expanding on the lecture material with full derivations, worked examples, additional figures, and references. Suitable as a self-study resource or course supplement.
 
-- [Lecture 1 Notes](CHM328/notes/lecture1_notes.tex) — Electronic structure, DFT foundations, and thermodynamic properties
-- [Lecture 2 Notes](CHM328/notes/lecture2_notes.tex) — Transition state theory, kinetics, and computational practice
+- [Lecture 1 Notes](CHM328/notes/lecture1_notes.pdf) — Electronic structure, DFT foundations, and thermodynamic properties
+- [Lecture 2 Notes](CHM328/notes/lecture2_notes.pdf) — Transition state theory, kinetics, and computational practice
 
 ---
 
