@@ -1,0 +1,43 @@
+name: Build Companion Notes PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'CHM328/notes/*.tex'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile Lecture 1 Notes
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CHM328/notes/lecture1_notes.tex
+
+      - name: Compile Lecture 2 Notes
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CHM328/notes/lecture2_notes.tex
+
+      - name: Move PDFs
+        run: |
+          mv CHM328/notes/lecture1_notes.pdf CHM328/notes/ 2>/dev/null || true
+          mv CHM328/notes/lecture2_notes.pdf CHM328/notes/ 2>/dev/null || true
+          mv lecture1_notes.pdf CHM328/notes/ 2>/dev/null || true
+          mv lecture2_notes.pdf CHM328/notes/ 2>/dev/null || true
+          ls -la CHM328/notes/*.pdf
+
+      - name: Commit PDFs
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add CHM328/notes/*.pdf
+          git diff --cached --quiet || git commit -m "Auto-build companion notes PDFs"
+          git push
